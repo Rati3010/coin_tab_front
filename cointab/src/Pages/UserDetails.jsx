@@ -29,12 +29,12 @@ const UserDetails = () => {
   }, [page,gender])
   return (
     <div>
-      <Select onChange={(e)=>setGender(e.target.value)} placeholder='Filter by gender' >
+      <Select onChange={(e)=>setGender(e.target.value)} placeholder='Filter by gender' width='200px' mb='50px'>
         <option value='male'>Male</option>
         <option value='female'>Female</option>
       </Select>
       <TableContainer>
-        <Table variant='simple'>
+        <Table variant='striped' colorScheme='teal'>
           <TableCaption>User Details</TableCaption>
           <Thead>
             <Tr>

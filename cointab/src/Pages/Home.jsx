@@ -67,10 +67,10 @@ const Home = () => {
   }
 
   return (
-    <div>
-      <Button onClick={fetchUsers}>Fetch Users</Button>
-      <Button onClick={deleteUsers}>Delete Users</Button>
-      <Link to="/userdetails"><Button>User Details</Button></Link>
+    <div style={{display:'flex',gap:'20px'}}>
+      <Button onClick={fetchUsers} colorScheme="pink">Fetch Users</Button>
+      <Button onClick={deleteUsers} colorScheme="pink">Delete Users</Button>
+      <Link to="/userdetails"><Button colorScheme="pink">User Details</Button></Link>
     </div>
   );
 };
